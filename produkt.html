@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <style>
         body { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
         header { background-color: #333; color: #fff; text-align: center; padding: 10px; }
@@ -18,7 +18,7 @@
         .description-text { font-size: 16px; margin: 20px 0; text-align: left; }
         .price-text { font-size: 32px; margin-top: 20px; }
         .button-container { display: flex; justify-content: space-between; flex-wrap: wrap; }
-        .add-to-cart, .choose-size, .reviews-box { width: 48%; margin-top: 10px; padding: 10px; background-color: lightblue; text-align: center; }
+        .add-to-cart, .choose-size, .reviews-box { width: 48%; margin-top: 10px; padding: 10px; background-color: lightblue; text-align: center; cursor: pointer; }
     </style>
 </head>
 <body>
@@ -32,7 +32,9 @@
         <div class="more-options">More options</div>
     </div>
     <main>
-        <img class="big-shoe-img" src="oblig3img.jpeg" alt="Nike Air Force 1 Image">
+        <div class="big-shoe-img">
+            <img src="oblig3img.jpeg" alt="Nike Air Force 1 Image">
+        </div>
         <div class="text-container">
             <div class="big-text">Nike Air Force 1 Low</div>
             <div class="description-text">
@@ -46,5 +48,25 @@
             <div class="reviews-box">Read Reviews</div>
         </div>
     </main>
+    
+
+    <script>
+        var addToCartBtn = document.querySelector('.add-to-cart');
+        var chooseSizeBtn = document.querySelector('.choose-size');
+        var reviewsBtn = document.querySelector('.reviews-box');
+
+        addToCartBtn.addEventListener('click', function() {
+            window.location.href = 'your_add_to_cart_url';
+        });
+
+        chooseSizeBtn.addEventListener('click', function() {
+            window.location.href = 'your_choose_size_url';
+        });
+
+        reviewsBtn.addEventListener('click', function() {
+            window.location.href = 'your_reviews_url';
+        });
+    </script>
 </body>
 </html>
+
