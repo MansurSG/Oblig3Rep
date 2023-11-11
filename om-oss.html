@@ -8,17 +8,14 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        body, header, main, .logo-bar, .search-bar, .shoe-container, .shoe-image, .more-results-btn {
+        body {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
-
-        body {
             font-family: 'Arial', sans-serif;
         }
 
-        header {
+        header, .logo-bar {
             background-color: #333;
             color: #fff;
             text-align: center;
@@ -38,8 +35,9 @@
         }
 
         .search-bar {
-            display: flex;
-            align-items: center;
+            flex: 1; 
+            margin-left: 10px;
+            padding: 5px;
         }
 
         main {
@@ -50,13 +48,13 @@
         .shoe-container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: space-around;
             gap: 10px;
             margin-top: 10px;
         }
 
         .shoe-image {
-            width: calc(50% - 5px);
+            width: 150px; 
             cursor: pointer;
         }
 
@@ -80,10 +78,10 @@
     </header>
     <main>
         <div class="shoe-container">
-            <img class="shoe-image" src="bilde1.png" alt="Shoe Image 1" onclick="openDetails('shoe1-details.html')">
-            <img class="shoe-image" src="bilde2.png" alt="Shoe Image 2" onclick="openDetails('shoe2-details.html')">
-            <img class="shoe-image" src="bilde3.png" alt="Shoe Image 3" onclick="openDetails('shoe3-details.html')">
-            <img class="shoe-image" src="bilde4.png" alt="Shoe Image 4" onclick="openDetails('shoe4-details.html')">
+            <img class="shoe-image" src="img/B270.png" alt="Shoe Image 1" onclick="openDetails('shoe1-details.html')"> 
+            <img class="shoe-image" src="img/G270.png" alt="Shoe Image 2" onclick="openDetails('shoe2-details.html')">
+            <img class="shoe-image" src="img/R270.png" alt="Shoe Image 3" onclick="openDetails('shoe3-details.html')">
+            <img class="shoe-image" src="img/S270.png" alt="Shoe Image 4" onclick="openDetails('shoe4-details.html')">
         </div>
         <button class="more-results-btn" onclick="openResultsPage()">MORE RESULTS →</button>
     </main>
@@ -98,5 +96,6 @@
         }
     </script>
 </body>
+
 
 </html>

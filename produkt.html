@@ -1,37 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+        body, header, main { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
         header { background-color: #333; color: #fff; text-align: center; padding: 10px; }
-        header h1 { font-size: 24px; }
         main { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 20px; }
-        main img { width: 100%; max-width: 800px; margin: 20px 0; }
-        main > * { width: 100%; margin-top: 20px; }
-        main > :first-child { font-size: 24px; font-weight: bold; }
-        main h2 { font-size: 24px; font-weight: bold; margin-top: 20px; }
-        main > :nth-child(2) { font-size: 16px; margin: 20px 0; text-align: left; }
-        main > :nth-child(3) { font-size: 32px; margin-top: 20px; }
-        main button { width: 48%; margin-top: 10px; padding: 10px; background-color: lightblue; cursor: pointer; }
+        img { width: 80%; max-width: 800px; margin: 20px 0; }
+        h2 { font-size: 24px; font-weight: bold; margin-top: 20px; }
+        div, div:nth-child(3) { width: 100%; margin: 20px 0; }
+        button { width: 48%; margin-top: 10px; padding: 10px; background-color: lightblue; cursor: pointer; }
     </style>
 </head>
+
 <body>
     <header>
         <h1>SHOEPLVG™</h1>
     </header>
     <main>
-        <img src="oblig3img.jpeg" alt="Nike Air Force 1 Image">
+        <img src="img/OWaf1.jpeg" alt="Nike Air Force 1 Image">
         <h2>Nike Air Force 1 Low</h2>
-        <div>
-            This Nike Air Force 1 Low is a result of the creative collaboration between Virgil Abloh´s Off-White label and the renowned brand. As part of the "Ghosting" Series, these sneakers boast a pristine white and sail color combination. The creator outdid himself on this one!
-        </div>
+        <div>This Nike Air Force 1 Low is a result of the creative collaboration between Virgil Abloh´s Off-White label and the renowned brand. As part of the "Ghosting" Series, these sneakers boast a pristine white and sail color combination. The creator outdid himself on this one!</div>
         <div>$680</div>
         <button onclick="window.location.href = 'your_add_to_cart_url';">ADD TO CART</button>
         <button onclick="window.location.href = 'your_choose_size_url';">Choose size</button>
         <button onclick="window.location.href = 'your_reviews_url';">Read Reviews</button>
     </main>
 </body>
+
+
+
 </html>
