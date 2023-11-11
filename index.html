@@ -21,9 +21,27 @@
             margin-bottom: 10px;
         }
 
+        nav {
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 10px;
+        }
+
         main {
             text-align: center;
             padding: 20px;
+        }
+
+        .center-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .big-shoe-img {
@@ -34,15 +52,21 @@
         }
 
         .big-text {
-            font-size: 24px;
+            font-size: 28px;
             font-weight: bold;
             margin-top: 20px;
+            max-width: 600px; 
+            margin-left: auto; 
+            margin-right: auto;
         }
 
         .description-text {
-            font-size: 16px;
+            font-size: 18px;
             margin: 20px 0;
             text-align: left;
+            max-width: 800px; 
+            margin-left: auto; 
+            margin-right: auto;
         }
 
         .price-text {
@@ -71,7 +95,12 @@
     <header>
         <h1>SHOEPLVG™</h1>
     </header>
-    <main>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">FAQ</a>
+        <a href="#">Products</a>
+    </nav>
+    <main class="center-content">
         <a href="produkt.html">
             <img class="big-shoe-img" src="img/OWaf1.jpeg" alt="Nike Air Force 1 Image">
         </a>
@@ -87,5 +116,14 @@
     </main>
 </body>
 
-
 </html>
+
+
+
+
+
+
+
+
+
+
