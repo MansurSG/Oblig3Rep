@@ -4,71 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
+    <meta property="og:title" content="Off White x Nike AF1">
+    <meta property="og:description" content="A rare and exclusive collaboration between Virgil Abloh and Nike. You dont find this everyday.">
+    <meta property="og:image" content="img/OWaf1.jpeg">
+    <meta property="og:type" content="product">
+    <meta property="product:price:amount" content="680">
+    <meta property="product:price:currency" content="USD">
+    <title>Off White x Nike AF1</title>
+    <link rel="stylesheet" href="css/style.css">
 
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "Off White x Nike AF1",
+            "description": "A rare and exclusive collaboration between Virgil Abloh and Nike.",
+            "image": "img/OWaf1.jpeg",
+            "offers": {
+                "@type": "Offer",
+                "priceCurrency": "USD",
+                "price": 680
+            }
         }
-
-        nav {
-            background-color: #f0f0f0;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #333;
-            margin: 0 10px;
-        }
-
-        main {
-            text-align: center;
-            padding: 20px;
-        }
-
-        img {
-            width: 100%;
-            max-width: 800px;
-            margin: 20px auto;
-            cursor: pointer;
-        }
-
-        h2 {
-            font-size: 24px;
-            font-weight: bold;
-            margin-top: 20px;
-        }
-
-        p {
-            font-size: 16px;
-            margin: 20px 0;
-            text-align: left;
-        }
-
-        p:last-child {
-            font-size: 32px;
-            margin-top: 20px;
-        }
-
-        button {
-            width: 48%;
-            margin-top: 10px;
-            padding: 10px;
-            background-color: lightblue;
-            cursor: pointer;
-        }
-    </style>
+    </script>
 </head>
 
 <body>
@@ -79,17 +37,22 @@
         <a href="#">Home</a>
         <a href="#">FAQ</a>
         <a href="#">Products</a>
+        <a href="analyse.html">Analyse</a>
     </nav>
-    <main>
-        <img src="img/OWaf1.jpeg" alt="Nike Air Force 1 Image">
-        <h2>Nike Air Force 1 Low</h2>
-        <p>This Nike Air Force 1 Low is a result of the creative collaboration between Virgil Abloh´s Off-White label and the renowned brand. As part of the "Ghosting" Series, these sneakers boast a pristine white and sail color combination. The creator outdid himself on this one!</p>
+
+    <main class="center-content">
+        <a href="produkt.html">
+            <img class="big-shoe-img" src="img/OWaf1.jpeg" alt="Nike Air Force 1 Image">
+        </a>
+        <h2>Off White x Nike AF1</h2>
+        <p>A rare and exclusive collaboration between Virgil Abloh and Nike.</p>
         <p>$680</p>
-        <button onclick="window.location.href = 'your_add_to_cart_url';">ADD TO CART</button>
-        <button onclick="window.location.href = 'your_choose_size_url';">Choose size</button>
-        <button onclick="window.location.href = 'your_reviews_url';">Read Reviews</button>
+        <button onclick="">ADD TO CART</button>
+        <button onclick="">Choose size</button>
+        <button onclick="">Read Reviews</button>
     </main>
 </body>
 
 </html>
+
 
