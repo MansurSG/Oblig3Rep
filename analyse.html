@@ -37,7 +37,7 @@
 
             <h3>Søkeordsanalysering</h3>
 
-            <p> I etterkant av søkeordsanalysering med hjelp av Google Trends, fant man nok materiale av relevante nøkkelord. Noen eksempler er f.eks. "Sneakers", "Hypebeast", "Off White", "Collectors item" "Reseller item", osv.
+            <p> I etterkant av søkeordsanalysering med hjelp av Google Trends, fant man et relevant søkeord i forhold til nettsiden min. Dette ordet var da "Nike sko dame" og "Nike snkrs Norge".
                 Alle disse ordene genererer høyt volum av søkere, nemlig siden dette er "In Style" om dagen. Dette er sko som folk selger videre for profit, så naturlig er det mange som er på utkikk etter dem.
 
             </p>
@@ -50,10 +50,29 @@
             <h3>SEO-analyse med Lighthouse</h3>
 
             <p> I etterkant av en gjennomføring av en analyse med Lighthouse, merket jeg noen feil som kan forbedres for å forbedre nettstedets ytelse. En av de identifiserte utfordringene er sterk nødvendighet for bedre bildeoptimalisering for å sikre raskere sidelasting. Dessuten var meningen å gjøre siden så idiotsikker som mulig, men det er tydelig nå at dette medfører at siden virker litt tom. Det kan da også virke som hele intensjonen med siden er å få mest mulig salg. Ikke særlig brukervennlig.</p>
-
+            <p>  <a href="img/Home.png">klikk for bilde </a>  </p>
+                
+            <p> <a href="img/Om-oss.png">klikk for bilde</a>  </p>
+                
+            <p> <a href="img/Produkt.png">klikk for bilde</a>  </p>
+                
 
         </section>
-
+            <section>
+                <h3>UU-analyse</h3>
+                <p>
+                    Fra index.html så kom det tilbake at jeg hadde en Error men ellers fikk siden gode tilbakemeldigner fra webAim. 
+                </p>
+                <p>
+                    I produkt.html så fikk vi ingen error, men  fikk en Alert om at det var en mistenksom alternative text.
+                </p>
+                <p>
+                    I om oss.html så kom det opp 3 alerts. To av de var forgrunn av "headers" som egentlig ikke er overskrift.
+                </p>
+                <p><a href="img/index.png">klikk for bilde</a></p>
+                <p><a href="img/produkt-2.png">kilkk for bilde</a></p>
+                <p><a href="img/om-oss-2.png">klikk for bilde</a></p>
+            </section>
 
 
         <section>
@@ -63,7 +82,8 @@
             <p> Med tanke på tilgjengelighetsanalyse av nettsiden min har jeg lagt  noe vekt på universell utforming for å sikre en inkluderende opplevelse for de aller fleste besøkende. De fleste medbrakte bilder skal ha alternative tekster for å støtte skjermlesere, og lenketekster er nøye formulert for å gi meningsfull navigasjon. (veldig vktig) </p>
 
         </section>
-
+<!-- Prøvde å innføre ARIA i koden, men slet litt ettersom at man støtte på en del feilmeldinger og "hick ups" underveis. Slet med å innføre endringene, ettersom at det ikke ville la seg gjøre. Men Skjermleserkompatibilitet fikk jeg til.
+Dette kan sees på bunnen av css filen.-->
      
 
         <section>
@@ -91,7 +111,76 @@
             <p>NB! Vennligst merk at skobildet er minimalisert, for å få mer plass til analyseringstekst. Nettsiden har hovedfokus å selge sjeldne og dyre releases, så utvalget er naturligvis ikke stort. </p>
         </section>
 
+        <section>
+            <h3>chatgpt resultatt</h3>
+            <p>
+                SEO:
+
+        Bra tittel ("SHOEPLVG™").
+        Forbedre bildeoptimalisering for raskere lasting.
+        Mikrodata på produktssiden er positivt.
+            </p>
+            <p>
+                UU:
+
+        Bra med alternativ tekst for bilder.
+        Vær nøye med bruk av overskrifter for skjermlesere.
+        Fikse og forbedre eventuelle feilmeldinger.
+            </p>
+            <p>
+                Andre tilbakemeldigner jeg fikk for forbedring er: 
+
+            Legg til en favicon for bedre merkevaresynlighet.
+            Sjekk at navigasjonslenker fungerer som de skal.
+            Valider HTML og CSS for kodeintegritet.
+            </p>
+
+<!-- har skrevet inn kommentarene direkte fra ChatGPT som oppgaven ba meg om -->
+        </section>
+        <section>
+            <h3>Forbedringer</h3>
+            <p>En av forbedringene jeg gjorde var å fikse "title" error som kom opp i index.html fila. Dette er fikset, men når man går på WebAim, vil den ikke oppdatere siste endringene. </p>
+    <!--Har gjort forbedringer underveis, men glemte at man skulle dokumentere det,
+         Ettersom at det dukket opp mange feilmeldinger som måtte behandles snarest for å gå videre.-->
+        </section>
     </main>
+    <section id="grid">
+        <div class="row"></div>
+        <div class="row">resultat</div>
+        <div class="row">sammenligning</div>
+
+         <div class="row">chatGPT</div>
+         <div class="row">Bra tittel ("SHOEPLVG™").
+            Forbedre bildeoptimalisering for raskere lasting.
+            Mikrodata på produktssiden er positivt.
+            Bra med alternativ tekst for bilder.
+            Vær nøye med bruk av overskrifter for skjermlesere.
+            Fikse og forbedre eventuelle feilmeldinger.
+        </div>
+         <div class="row"> Både ChatGPT og Lighthouse nevner klart og tydelig at dette med bildeoptimalisering er noe som må forbedres på nettsiden min. Dette er noe jeg må ta med meg videre til neste gang.
+             </div>
+
+         <div class="row">lighthouse</div>
+         <div class="row">I etterkant av en gjennomføring av en analyse med Lighthouse, merket jeg noen feil som kan forbedres for å forbedre nettstedets ytelse. En av de identifiserte utfordringene er sterk nødvendighet for bedre bildeoptimalisering for å sikre raskere sidelasting. Dessuten var meningen å gjøre siden så idiotsikker som mulig, men det er tydelig nå at dette medfører at siden virker litt tom. Det kan da også virke som hele intensjonen med siden er å få mest mulig salg. Ikke særlig brukervennlig.</div>
+         <div class="row"> Etter nøye sammeligning her kom jeg nå fram til at nettsiden kunne vært mer detaljerik, og ikke bare egnet til å selge sko. Dette kan virke kynisk. Sidelasting er også noe jeg må ta med videre for å oppnå en bedre nettside. </div>
+
+         <div class="row">webaim</div>
+         <div class="row">Fra index.html så kom det tilbake at jeg hadde en Error men ellers fikk siden gode tilbakemeldigner fra webAim. 
+            I produkt.html så fikk vi ingen error, men  fikk en Alert om at det var en mistenksom alternative text.
+
+         </div>
+         <div class="row">På WebAim kom det det "Error" og ChatGPT ga tips om å fikse eventuelle feilemeldinger som jeg senere rettet opp. Dette var ikke store feilmeldinger, men de fortjente å bli rettet opp.
+            Et av de feilmeldingene var f.eks. manglende tittel på Index.html filen og dårlig plassering av bilde.
+         </div>
+         
+
+
+    </section>
+
+
+    
+
+
 </body>
 
 </html>
